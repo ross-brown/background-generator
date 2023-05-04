@@ -14,7 +14,7 @@ function randomHexColor() {
   return `#${randomColor.slice(0, 6)}`;
 }
 
-function setRandonGradient() {
+function setRandomGradient() {
   color1.value = randomHexColor();
   color2.value = randomHexColor();
   setGradient();
@@ -24,4 +24,4 @@ function setRandonGradient() {
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 window.addEventListener("load", setGradient);
-randomBtn.addEventListener("click", setRandonGradient);
+randomBtn.addEventListener("click", setRandomGradient);
